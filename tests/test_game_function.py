@@ -17,3 +17,6 @@ class TestBuzzGame(unittest.TestCase):
         
     def test_third_input(self):
         self.assertEqual("Buzz", fizz_buzz_game(self.input_3))
+
+    def test_fourth_input(self):
+        self.assertEqual("Fizz Buzz", fizz_buzz_game(self.input_4))
