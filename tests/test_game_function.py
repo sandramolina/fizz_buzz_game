@@ -1,12 +1,13 @@
 import unittest
+from src.game_function import *
 
 class TestBuzzGame(unittest.TestCase):
 
     def setUp(self):
-        input_1 = 1
-        input_2 = 3
-        input_3 = 5
-        input_4 = 15
+        self.input_1 = 1
+        self.input_2 = 3
+        self.input_3 = 5
+        self.input_4 = 15
 
     def test_first_input(self):
-        self.assertEqual(1, fizz_buzz_game(input_1))
+        self.assertEqual(1, fizz_buzz_game(self.input_1))
