@@ -11,3 +11,6 @@ class TestBuzzGame(unittest.TestCase):
 
     def test_first_input(self):
         self.assertEqual(1, fizz_buzz_game(self.input_1))
+
+    def test_second_input(self):
+        self.assertEqual("Fizz", fizz_buzz_game(self.input_2))
