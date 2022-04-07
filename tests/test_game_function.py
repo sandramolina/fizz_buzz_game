@@ -8,6 +8,7 @@ class TestBuzzGame(unittest.TestCase):
         self.input_2 = 3
         self.input_3 = 5
         self.input_4 = 15
+        self.input_5 = 7
 
     def test_first_input(self):
         self.assertEqual(1, fizz_buzz_game(self.input_1))
@@ -20,3 +21,6 @@ class TestBuzzGame(unittest.TestCase):
 
     def test_fourth_input(self):
         self.assertEqual("Fizz Buzz", fizz_buzz_game(self.input_4))
+
+    def test_fifth_input(self):
+        self.assertEqual(7, fizz_buzz_game(self.input_5))
